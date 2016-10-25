@@ -1,4 +1,4 @@
-<h1>You played Scissors!</h1>
+<h1>You played Scissors</h1>
 
 <p>The computer played
 
@@ -8,8 +8,16 @@
 
 
 
-<% if @computer_move == "Scissors!"%>
+<% if @computer_move == "Scissors"%>
 You tied!
+<% end %>
+
+<% if @computer_move == "Rock"%>
+You lost!
+<% end %>
+
+<% if @computer_move == "Paper"%>
+You won!
 <% end %>
 
 <img src="/assets/images/scissors.png" width = "200">
