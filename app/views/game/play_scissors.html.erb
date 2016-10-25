@@ -32,17 +32,8 @@
       <h1>
 <span>
 
-        <% if @computer_move == "Scissors"%>
-        You tied!
-        <% end %>
-
-        <% if @computer_move == "Paper"%>
-        You won!
-        <% end %>
-
-        <% if @computer_move == "Rock"%>
-        You lost!
-        <% end %>
+      <%=@outcome_scissors%>
+      
         </span>
       </h1>
     </div>
