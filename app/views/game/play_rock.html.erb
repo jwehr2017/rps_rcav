@@ -1,23 +1,50 @@
-<h1>You played Rock</h1>
+<div class="row">
+<div class="col-md-4 col-md-offset-2 col-xs-6">
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <h2 class="panel-title text-center">
+        Rock
+      </h2>
+    </div>
+    <div class="panel-body">
+      <img class="img-responsive" src="/assets/images/rock.png">
+    </div>
+  </div>
+</div>
 
-<p>The computer played
+<div class="col-md-4 col-xs-6">
+  <div class="panel panel-danger">
+    <div class="panel-heading">
+      <h2 class="panel-title text-center">
+        <%=@computer_move%>
+      </h2>
+    </div>
+    <div class="panel-body">
+      <img class="img-responsive" src="/assets/images/<%=@computer_move%>.png">
+    </div>
+  </div>
+</div>
+</div>
 
+<div class="row">
+  <div class="col-md-12">
+    <div class="well text-center">
+      <h1>
+<span>
 
-<%=@computer_move%>
-</p>
+        <% if @computer_move == "Rock"%>
+        You tied!
+        <% end %>
 
+        <% if @computer_move == "Scissors"%>
+        You won!
+        <% end %>
 
-
-<% if @computer_move == "Rock"%>
-You tied!
-<% end %>
-
-<% if @computer_move == "Scissors"%>
-You won!
-<% end %>
-
-<% if @computer_move == "Paper"%>
-You lost!
-<% end %>
-
-<img src="/assets/images/rock.png" width = "200">
+        <% if @computer_move == "Paper"%>
+        You lost!
+        <% end %>
+        </span>
+      </h1>
+    </div>
+  </div>
+</div>

@@ -2,12 +2,37 @@
 <html>
 <head>
   <title>RockPaperScissors</title>
-  <%= stylesheet_link_tag    'http://localhost:3000//assets/css/bootstrap.css', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
+  <link rel="stylesheet" media="all" href="/assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" />
+  <script src="/assets/application-25bd6b47ad2ef49757a639cd9dc9d7c4b137f7a0bf03bb8d13757d905d6dfcef.js"></script>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="t5UsmINDJVKoXRkYT2IiD8gCCvXsOYmxw6nuHOVbchNy2ShUAoh2svEzB80+xVTzhOY7xF4YSlLAOvVqI3I+og==" />
+
+  <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
 </head>
 <body>
 
+  <hr>
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 col-xs-12">
+      <div class="btn-group btn-group-justified">
+        <a href="/rock" class="btn btn-block btn-primary">
+          Play Rock
+        </a>
+
+        <a href="/paper" class="btn btn-block btn-info">
+          Play Paper
+        </a>
+
+        <a href="/scissors" class="btn btn-block btn-primary">
+          Play Scissors
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  
 <%= yield %>
 
 </body>
